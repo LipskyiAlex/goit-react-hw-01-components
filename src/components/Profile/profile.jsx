@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
-import defaultImage from '../Profile/defaultImage.png';
+import defaultAvatar from './defaultAvatar.png';
 
- const Profile = ({username, tag, location, avatar = defaultImage, stats:{followers,views,likes}}) => {
+ const Profile = ({username, tag, location, avatar = defaultAvatar, stats:{followers,views,likes}}) => {
 
    return (<div className="profile">
   <div className="description">
@@ -17,15 +17,15 @@ import defaultImage from '../Profile/defaultImage.png';
 
   <ul className="stats">
     <li>
-      <span className="label">Followers </span>
+      <span className="label">Followers</span>
       <span className="quantity">{followers}</span>
     </li>
     <li>
-      <span className="label">Views </span>
+      <span className="label">Views</span>
       <span className="quantity">{views}</span>
     </li>
     <li>
-      <span className="label">Likes </span>
+      <span className="label">Likes</span>
       <span className="quantity">{likes}</span>
     </li>
   </ul>

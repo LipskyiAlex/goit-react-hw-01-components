@@ -5,10 +5,10 @@ const Statistics = ({ items,title }) => {
     <section className="statistics">
       {title && <h2 className="title">{title}</h2>}
       <ul className="stat-list">
-        {items.map(el => (
-          <li key={el.id} className="item">
-            <span className="label">{el.label}</span>
-            <span className="percentage">{el.percentage}</span>
+        {items.map(({id,label,percentage}) => (
+          <li key={id} className="item">
+            <span className="label">{label}</span>
+            <span className="percentage">{percentage}</span>
           </li>
         ))}
       </ul>
@@ -16,17 +16,17 @@ const Statistics = ({ items,title }) => {
   );
 };
 
-export default Statistics;
-
 // PropTypes
 
 Statistics.propTypes = {
 
   title: PropTypes.string,
-  items:PropTypes.shape({
-
+    items:PropTypes.arrayOf(
+     PropTypes.shape({
     id:PropTypes.string.isRequired,
     label: PropTypes.string.isRequired,
     percentage: PropTypes.number.isRequired
-  })
+  }))
 };
+
+export default Statistics;
