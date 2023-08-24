@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
- const Profile = ({username, tag, location, avatar, stats:{followers,views,likes}}) => {
+ export const Profile = ({username, tag, location, avatar, stats:{followers,views,likes}}) => {
 
    return (<div className="profile">
   <div className="description">
@@ -48,4 +48,3 @@ import PropTypes from 'prop-types';
 
  }
 
- export default Profile;

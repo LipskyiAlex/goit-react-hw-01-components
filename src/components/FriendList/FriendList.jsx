@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-const FriendList = ({friends}) => {
+export const FriendList = ({friends}) => {
 
    return (
 
@@ -30,5 +30,3 @@ FriendList.propTypes = {
         isOnline:PropTypes.bool.isRequired
     }))
 }
-
-export default FriendList;
