@@ -15,7 +15,7 @@ import defaultAvatar from './defaultAvatar.png';
     <p className="location">{location}</p>
   </div>
 
-  <ul className="stats">
+  <ul className="profile-list list">
     <li>
       <span className="label">Followers</span>
       <span className="quantity">{followers}</span>

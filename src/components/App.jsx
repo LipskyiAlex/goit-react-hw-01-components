@@ -12,7 +12,7 @@ import transactions from "../data/transactions.json"
 
 export const App = () => {
   return ( 
-     <div>
+     <div className="main-container">
 <Profile
 avatar={user.avatar}
 username={user.username}
