@@ -24,7 +24,7 @@ location={user.location}
   <Statistics
      
      items={data}
-     title={"Title"}
+     title={"Upload stats"}
 />
 
   <FriendList 

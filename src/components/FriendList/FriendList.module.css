@@ -1,4 +1,4 @@
-
+@import "../styles.module.css";
 
 .list {
 
@@ -11,7 +11,6 @@ margin-bottom: 10px;
     display: flex;
     align-items: center;
     gap: 10px;
-
     padding-left: 10px;
 }
 
@@ -21,7 +20,7 @@ margin-bottom: 10px;
 
     font-size: 18px;
     font-weight: 600;
-    color: #324e63;
+    color: var(--primary-color);
 }
 
 

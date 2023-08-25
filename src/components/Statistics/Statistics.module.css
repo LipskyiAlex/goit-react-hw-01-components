@@ -1,3 +1,4 @@
+@import "../styles.module.css";
 
 .statistics {
 
@@ -7,8 +8,9 @@
 .title {
 
     text-align: center;
-    font-size: 20px;
-    color: #324e63;
+    font-size: 18px;
+    color: var(--primary-color);
+    text-transform: uppercase;
 
     margin-bottom: 5px;
 }
@@ -31,7 +33,7 @@
 .label {
      font-size: 14px;
     font-weight: 700;
-    color: #324e63;
+    color: var(--primary-color);
 
     
 }
@@ -40,5 +42,5 @@
 
     font-size: 12px;
     font-weight: 500;
-    color: #324e63;
+    color: var(--primary-color);
 }

@@ -1,3 +1,6 @@
+@import "../styles.module.css";
+
+
 th,td {
 
     border-top: 0.5px solid;
@@ -12,16 +15,17 @@ table {
 .table {
 width: 100%;
 
-
 text-align: center;
-font-size: 14px;
+font-size: 12px;
 
-color: #324e63;
+color: var(--primary-color);
 }
 
 .head {
 
     border-top: 1px solid;
     font-weight: 700;
+
+     text-transform: uppercase;
 
 }

@@ -1,6 +1,9 @@
 import PropTypes from 'prop-types';
 import css from './Profile.module.css';
 import { AiFillTag } from "react-icons/ai";
+import { AiFillEye } from "react-icons/ai";
+import { FcLike } from "react-icons/fc";
+import {GiShadowFollower} from "react-icons/gi";
 import {MdOutlineLocationCity} from 'react-icons/md';
 
  export const Profile = ({username, tag, location, avatar, stats:{followers,views,likes}}) => {
@@ -21,15 +24,15 @@ import {MdOutlineLocationCity} from 'react-icons/md';
 
   <ul className={css.list}>
     <li className={css.item}>
-      <span className={css.spantitle}>Followers</span>
+      <span className={css.spantitle}><GiShadowFollower className={css.statsIcon} size={12}/>  Followers</span>
       <span className={css.spantext}>{followers}</span>
     </li>
     <li className={css.item}>
-      <span className={css.spantitle}>Views</span>
+      <span className={css.spantitle}><AiFillEye className={css.statsIcon} size={12}/>   Views</span>
       <span className={css.spantext}>{views}</span>
     </li>
     <li className={css.item}>
-      <span className={css.spantitle}>Likes</span>
+      <span className={css.spantitle}><FcLike className={css.statsIcon} size={12}/>   Likes</span>
       <span className={css.spantext}>{likes}</span>
     </li>
   </ul>

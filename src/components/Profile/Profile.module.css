@@ -1,3 +1,4 @@
+@import "../styles.module.css";
 
 .profile {
 
@@ -34,7 +35,7 @@
 
     font-size: 20px;
     font-weight: 700;
-    color: #324e63;
+    color: var(--primary-color);
 }
 
 .tag {
@@ -80,10 +81,9 @@
 
     display: block;
     text-align: center;
-
     font-weight: 700;
     font-size: 12px;
-    color: #324e63;
+    color: var(--primary-color);
   }
 
 
@@ -92,5 +92,5 @@
     display: block;
     text-align: center;
     font-size: 12px;
-    color: #324e63;
+    color: var(--primary-color);
   }
