@@ -8,6 +8,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);
 }
 
 code {
@@ -29,10 +31,26 @@ ul {
     padding: 0;
 }
 
+ul {
+
+  list-style: none;
+}
+
 img {
     display: block;
     max-width: 100%;
     height: auto;
+}
+
+
+.container {
+
+  width: 250px;
+
+  box-shadow: 0px 8px 60px -10px rgba(13,28,39,0.6);
+    background: #fff;
+    border-radius: 12px;
+    padding-bottom: 15px;
 }
 
 .main-container {
@@ -41,13 +59,11 @@ img {
   margin: 0 auto;
   display: grid;
   place-items: center;
-
-  
+    
 }
+
+
 .link{
     text-decoration: none;
 }
 
-.list{
-    list-style: none;
-}

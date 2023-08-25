@@ -13,6 +13,7 @@ import transactions from "../data/transactions.json"
 export const App = () => {
   return ( 
      <div className="main-container">
+      <div className="container">
 <Profile
 avatar={user.avatar}
 username={user.username}
@@ -23,6 +24,7 @@ location={user.location}
   <Statistics
      
      items={data}
+     title={"Title"}
 />
 
   <FriendList 
@@ -34,6 +36,7 @@ location={user.location}
       transactions = {transactions}
 />
      </div> 
+     </div>
    
   )
 };

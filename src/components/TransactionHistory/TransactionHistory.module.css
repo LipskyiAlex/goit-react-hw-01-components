@@ -1,0 +1,27 @@
+th,td {
+
+    border-top: 0.5px solid;
+}
+
+table {
+
+    border-collapse: collapse;
+}
+
+
+.table {
+width: 100%;
+
+
+text-align: center;
+font-size: 14px;
+
+color: #324e63;
+}
+
+.head {
+
+    border-top: 1px solid;
+    font-weight: 700;
+
+}
