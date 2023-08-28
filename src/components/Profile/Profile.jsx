@@ -1,46 +1,42 @@
 import PropTypes from 'prop-types';
-import css from './Profile.module.css';
 import { AiFillTag } from "react-icons/ai";
 import { AiFillEye } from "react-icons/ai";
 import { FcLike } from "react-icons/fc";
 import {GiShadowFollower} from "react-icons/gi";
 import {MdOutlineLocationCity} from 'react-icons/md';
 
+import {ProfileWrap,ProfileName,Image,Name,Tag,Location,List,Item,StatsTitle,StatsText} from "./profile.styled";
+
  export const Profile = ({username, tag, location, avatar, stats:{followers,views,likes}}) => {
 
-
-
-   return (<div className={css.profile}>
-  <div className={css.profileName}>
-    <img
-      src={avatar}
-      alt={username}
-      className={css.avatar}
-    />
-    <p className={css.name}>{username}</p>
-    <p className={css.tag}><AiFillTag className={css.icon} size={16}/>{tag}</p>
-    <p className={css.location}><MdOutlineLocationCity className={css.icon} size={16}/> {location}</p>
-  </div>
-
-  <ul className={css.list}>
-    <li className={css.item}>
-      <span className={css.spantitle}><GiShadowFollower className={css.statsIcon} size={12}/>  Followers</span>
-      <span className={css.spantext}>{followers}</span>
-    </li>
-    <li className={css.item}>
-      <span className={css.spantitle}><AiFillEye className={css.statsIcon} size={12}/>   Views</span>
-      <span className={css.spantext}>{views}</span>
-    </li>
-    <li className={css.item}>
-      <span className={css.spantitle}><FcLike className={css.statsIcon} size={12}/>   Likes</span>
-      <span className={css.spantext}>{likes}</span>
-    </li>
-  </ul>
-</div>);
- }
-
-
-
+  return (<ProfileWrap>
+    <ProfileName>
+      <Image
+        src={avatar}
+        alt={username}
+      />
+      <Name>{username}</Name>
+      <Tag><AiFillTag size={16}/>{tag}</Tag>
+      <Location><MdOutlineLocationCity size={16}/> {location}</Location>
+    </ProfileName>
+  
+    <List>
+    <Item>
+      <StatsTitle><GiShadowFollower size={12}/>  Followers</StatsTitle>
+      <StatsText>{followers}</StatsText>
+    </Item>
+    <Item>
+      <StatsTitle><AiFillEye size={12}/>   Views</StatsTitle>
+      <StatsText>{views}</StatsText>
+    </Item>
+    <Item>
+      <StatsTitle><FcLike size={12}/>   Likes</StatsTitle>
+      <StatsText>{likes}</StatsText>
+    </Item>
+  </List>
+  </ProfileWrap>);
+   }
+  
  Profile.propTypes = {
 
   username: PropTypes.string.isRequired,

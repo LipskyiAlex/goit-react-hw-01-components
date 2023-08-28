@@ -3,6 +3,7 @@ import {Profile} from "./Profile/Profile.jsx";
 import {Statistics} from "./Statistics/Statistics.jsx";
 import { FriendList } from "./FriendList/FriendList.jsx";
 import {TransactionHistory} from './TransactionHistory/TransactionHistory.jsx';
+import {MainContainer,WrapContainer} from "./app.styled";
 
 import user from "../data/user.json";
 import data from "../data/data.json";
@@ -12,8 +13,8 @@ import transactions from "../data/transactions.json"
 
 export const App = () => {
   return ( 
-     <div className="main-container">
-      <div className="container">
+     <MainContainer>
+      <WrapContainer>
 <Profile
 avatar={user.avatar}
 username={user.username}
@@ -35,8 +36,8 @@ location={user.location}
 <TransactionHistory
       transactions = {transactions}
 />
-     </div> 
-     </div>
+     </WrapContainer> 
+     </MainContainer>
    
   )
 };
